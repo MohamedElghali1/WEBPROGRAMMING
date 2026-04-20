@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHOP.CO — Find Clothes That Match Your Style</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    Sign up and get 20% off to your first order. <a href="#">Sign Up Now</a>
+    <button class="close-bar" onclick="this.parentElement.style.display='none'">✕</button>
+  </div>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">SHOP.CO</a>
+
+      <ul class="nav-links">
+        <li><a href="#">Shop <span class="arrow">▼</span></a></li>
+        <li><a href="#">On Sale</a></li>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Brands</a></li>
+      </ul>
+
+      <div class="nav-search">
+        <span class="si">🔍</span>
+        <input type="text" placeholder="Search for products..." />
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn" title="Cart">
+          🛒
+          <span class="cart-badge">3</span>
+        </button>
+        <button class="icon-btn" title="Account">👤</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-visual">
+      <span class="hero-visual-text">Fashion · Style · You</span>
+    </div>
+    <div class="container">
+      <div class="hero-text">
+        <h1>Find Clothes That Matches Your Style</h1>
+        <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+        <a href="#" class="btn btn-white">Shop Now</a>
+
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num">200+</div>
+            <div class="stat-lbl">International Brands</div>
+          </div>
+          <div>
+            <div class="stat-num">2,000+</div>
+            <div class="stat-lbl">High-Quality Products</div>
+          </div>
+          <div>
+            <div class="stat-num">30,000+</div>
+            <div class="stat-lbl">Happy Customers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Strip -->
+  <div class="brand-strip">
+    <div class="container">
+      <span class="brand-name">Versace</span>
+      <span class="brand-name">Zara</span>
+      <span class="brand-name">Gucci</span>
+      <span class="brand-name">Prada</span>
+      <span class="brand-name">Calvin Klein</span>
+    </div>
+  </div>
+
+  <!-- New Arrivals -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">New Arrivals</h2>
+        <a href="#" class="view-all">View All →</a>
+      </div>
+
+      <div class="product-grid">
+        <!-- Card 1 -->
+        <div class="product-card fade-in">
+          <div class="product-image">
+            <span class="product-tag tag-new">New</span>
+            <div class="product-img-inner">T-SHIRT</div>
+          </div>
+          <div class="product-swatches">
+            <span class="swatch active" style="background:#f5f5f0;"></span>
+            <span class="swatch" style="background:#444;"></span>
+            <span class="swatch" style="background:#c87941;"></span>
+          </div>
+          <div class="product-name">Gradient Graphic T-shirt</div>
+          <div class="product-rating"><span class="stars">★★★★</span><span class="rating-num">4.5/5</span></div>
+          <div class="product-price"><span class="price-now">$145</span></div>
+        </div>
+        <!-- Card 2 -->
+        <div class="product-card fade-in">
+          <div class="product-image">
+            <div class="product-img-inner">PANTS</div>
+          </div>
+          <div class="product-swatches">
+            <span class="swatch active" style="background:#3b5a8a;"></span>
+            <span class="swatch" style="background:#222;"></span>
+          </div>
+          <div class="product-name">Skinny Fit Jeans</div>
+          <div class="product-rating"><span class="stars">★★★★</span><span class="rating-num">3.5/5</span></div>
+          <div class="product-price">
+            <span class="price-now">$240</span>
+            <span class="price-was">$260</span>
+            <span class="price-badge">-20%</span>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="product-card fade-in">
+          <div class="product-image">
+            <span class="product-tag tag-sale">-30%</span>
+            <div class="product-img-inner">POLO</div>
+          </div>
+          <div class="product-swatches">
+            <span class="swatch active" style="background:#f5f5f0;"></span>
+            <span class="swatch" style="background:#5a7a5a;"></span>
+            <span class="swatch" style="background:#7a5a5a;"></span>
+          </div>
+          <div class="product-name">Polo with Tipping Details</div>
+          <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-num">4.5/5</span></div>
+          <div class="product-price">
+            <span class="price-now">$180</span>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="product-card fade-in">
+          <div class="product-image">
+            <div class="product-img-inner">SHIRT</div>
+          </div>
+          <div class="product-swatches">
+            <span class="swatch active" style="background:#6a8a9a;"></span>
+            <span class="swatch" style="background:#2a3a4a;"></span>
+          </div>
+          <div class="product-name">Black Striped T-Shirt</div>
+          <div class="product-rating"><span class="stars">★★★★</span><span class="rating-num">5.0/5</span></div>
+          <div class="product-price">
+            <span class="price-now">$120</span>
+            <span class="price-was">$150</span>
+            <span class="price-badge">-30%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="cat-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Browse By Dress Style</h2>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card">
+          <div class="cat-label">Casual</div>
+          <div class="cat-count">142 Products</div>
+          <span class="cat-arrow">↗</span>
+        </div>
+        <div class="cat-card">
+          <div class="cat-label">Formal</div>
+          <div class="cat-count">98 Products</div>
+          <span class="cat-arrow">↗</span>
+        </div>
+        <div class="cat-card">
+          <div class="cat-label">Party</div>
+          <div class="cat-count">64 Products</div>
+          <span class="cat-arrow">↗</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Selling -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Top Selling</h2>
+        <a href="#" class="view-all">View All →</a>
+      </div>
+      <div class="product-grid">
+        <div class="product-card fade-in">
+          <div class="product-image">
+            <div class="product-img-inner">GRAPHIC</div>
+          </div>
+          <div class="product-swatches">
+            <span class="swatch active" style="background:#f5f5f0;"></span>
+            <span class="swatch" style="background:#e87a4a;"></span>
+          </div>
+          <div class="product-name">Vertical Striped Shirt</div>
+          <div class="product-rating"><span class="stars">★★★★</span><span class="rating-num">5.0/5</span></div>
+          <div class="product-price">
+            <span class="price-now">$212</span>
+            <span class="price-was">$232</span>
+            <span class="price-badge">-20%</span>
+          </div>
+        </div>
+        <div class="product-card fade-in">
+          <div class="product-image">
+            <span class="product-tag tag-new">New</span>
+            <div class="product-img-inner">COURAGE</div>
+          </div>
+          <div class="product-swatches">
+            <span class="swatch active" style="background:#333;"></span>
+            <span class="swatch" style="background:#4a6a4a;"></span>
+          </div>
+          <div class="product-name">Courage Graphic T-shirt</div>
+          <div class="product-rating"><span class="stars">★★★★</span><span class="rating-num">4.0/5</span></div>
+          <div class="product-price"><span class="price-now">$145</span></div>
+        </div>
+        <div class="product-card fade-in">
+          <div class="product-image">
+            <div class="product-img-inner">LOOSE</div>
+          </div>
+          <div class="product-swatches">
+            <span class="swatch active" style="background:#d4aa6a;"></span>
+            <span class="swatch" style="background:#f5f5f0;"></span>
+            <span class="swatch" style="background:#444;"></span>
+          </div>
+          <div class="product-name">Loose Fit Bermuda Shorts</div>
+          <div class="product-rating"><span class="stars">★★★</span><span class="rating-num">3.0/5</span></div>
+          <div class="product-price"><span class="price-now">$80</span></div>
+        </div>
+        <div class="product-card fade-in">
+          <div class="product-image">
+            <div class="product-img-inner">FADED</div>
+          </div>
+          <div class="product-swatches">
+            <span class="swatch active" style="background:#3b5a8a;"></span>
+          </div>
+          <div class="product-name">Faded Skinny Jeans</div>
+          <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-num">4.7/5</span></div>
+          <div class="product-price"><span class="price-now">$210</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews -->
+  <section class="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Happy Customers</h2>
+        <a href="#" class="view-all">View All →</a>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-author">Sarah M. <span class="verified">✔ Verified</span></div>
+          <div class="review-text">"I'm blown away by the quality and style. The clothes I ordered exceeded every expectation and I'll definitely be shopping here again!"</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-author">Alex K. <span class="verified">✔ Verified</span></div>
+          <div class="review-text">"Finding clothes that match my personal style used to be a struggle until I discovered SHOP.CO. The range is incredible and delivery was super fast."</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★</div>
+          <div class="review-author">James L. <span class="verified">✔ Verified</span></div>
+          <div class="review-text">"As someone who's picky about fashion, I appreciate the attention to detail. Every stitch is perfect and the fabric quality is top-notch."</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <div class="container">
+    <div class="newsletter">
+      <h3>Stay Up to Date About Our Offers And Events</h3>
+      <div class="nl-form">
+        <input type="email" placeholder="Enter your email address" />
+        <button class="btn btn-white">Subscribe To Newsletter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="flogo">SHOP.CO</div>
+          <p>We have clothes that suit your style and comfort that you'll love. Find your perfect outfit today.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Help</h5>
+          <ul>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Delivery Details</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>FAQ</h5>
+          <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Manage Deliveries</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Payments</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">SHOP.CO © 2026. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" title="Twitter">𝕏</a>
+          <a href="#" class="social-btn" title="Facebook">f</a>
+          <a href="#" class="social-btn" title="Instagram">✦</a>
+          <a href="#" class="social-btn" title="Github">⌥</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

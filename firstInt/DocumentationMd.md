@@ -47,14 +47,14 @@ These elements stay visible on every screen.
 ## 4. How the Final Project Will Look Like
 
 ### Home Page
- <img width="1877" height="986" alt="home1" src="https://github.com/user-attachments/assets/9ec36a25-ac83-47bc-96bb-0de5ebe9e21d" />
-<img width="1883" height="986" alt="home2" src="https://github.com/user-attachments/assets/63ce36a9-48e0-4f03-a1f7-ad3ad8749568" />
-<img width="914" height="538" alt="customerReviewSection" src="https://github.com/user-attachments/assets/530aeb92-f2fa-4183-9db0-ca29ba14b7c7" />
+ d:\Users\ghali\Downloads\customerReviewSection.png 
+ d:\Users\ghali\Downloads\home2.png
+  d:\Users\ghali\Downloads\home1.png
 
 *Description: The home page features a hero section with a call-to-action, followed by a grid of featured products.*
 
 ### About Us Page
-<img width="1631" height="1058" alt="Aboutus" src="https://github.com/user-attachments/assets/d4a0dcc0-509a-47f2-85ee-d5ef293f9018" />
+d:\Users\ghali\Downloads\Aboutus.png
 
 
 *Description: The About Us page includes company information, mission statement, and an image gallery.*

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KALI.CO - About Us</title>
+  <title>Sign Up - KALI.CO</title>
   <link rel="stylesheet" href="styles.css">
   <script src="sidebar.js" defer></script>
 </head>
@@ -21,14 +21,14 @@
       <div class="sidebar-section-title">Navigation</div>
       <ul>
         <li><a href="index.html"><span class="sidebar-icon"></span> Home</a></li>
-        <li><a href="about.html" class="active"><span class="sidebar-icon"></span> About Us</a></li>
+        <li><a href="about.html"><span class="sidebar-icon"></span> About Us</a></li>
         <li><a href="#"><span class="sidebar-icon"></span> Contact</a></li>
       </ul>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-section-title">Categories</div>
       <ul>
-        <li><a href="categories.html#casual"><span class="sidebar-icon"></span> Casual <span class="sidebar-badge">New</span></a></li>
+        <li><a href="categories.html#casual"><span class="sidebar-icon"></span> Casual</a></li>
         <li><a href="categories.html#formal"><span class="sidebar-icon"></span> Formal</a></li>
         <li><a href="categories.html#accessories"><span class="sidebar-icon"></span> Accessories</a></li>
       </ul>
@@ -37,13 +37,11 @@
       <div class="sidebar-section-title">Account</div>
       <ul>
         <li><a href="login.html"><span class="sidebar-icon"></span> Login</a></li>
-        <li><a href="signup.html"><span class="sidebar-icon"></span> Sign Up</a></li>
+        <li><a href="signup.html" class="active"><span class="sidebar-icon"></span> Sign Up</a></li>
       </ul>
     </div>
   </nav>
 </aside>
-
-<div class="promo-banner"> Free shipping on orders over $60 — Limited time offer!</div>
 
 <header>
   <div class="nav-container container">
@@ -71,59 +69,46 @@
   </div>
 </header>
 
-<main>
-  <section class="about-header">
-    <h1>About KALI.CO</h1>
-    <p>Style is a language everyone speaks.</p>
-  </section>
+<main class="signup-page">
+  <div class="signup-card">
+    <h1>Create Account</h1>
+    <p>Join KALI.CO and start shopping today.</p>
 
-  <section class="container">
-    <div class="about-content">
-      <div class="about-text">
-        <h2>Our Mission</h2>
-        <p>KALI.CO was born from one simple belief: great fashion should be accessible to everyone. We work with international brands and curate only the highest-quality products.</p>
-        <p>Every product in our catalogue passes strict quality standards. We only partner with brands that share our commitment to superior craftsmanship and sustainable fashion.</p>
+    <form>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Mohamed" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Ali" required>
+        </div>
       </div>
-      <div class="about-image">
-        <img src="https://via.placeholder.com/480x360?text=KALI.CO+Fashion" alt="KALI.CO Fashion">
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
       </div>
-    </div>
-  </section>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="At least 8 characters" required>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repeat your password" required>
+      </div>
+
+      <button type="submit" class="btn submit-btn">Create Account</button>
+    </form>
+
+    <div class="divider">or</div>
+
+    <p class="login-note">Already have an account? <a href="login.html">Login here</a></p>
+  </div>
 </main>
-
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <h2>KALI.CO</h2>
-      <p>Curating high-quality fashion from the world's best brands — accessible to everyone.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Shop</h4>
-      <ul>
-        <li><a href="categories.html#casual">Casual</a></li>
-        <li><a href="categories.html#formal">Formal</a></li>
-        <li><a href="categories.html#accessories">Accessories</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Account</h4>
-      <ul>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 KALI.CO Web Programming Project. All rights reserved.</p>
-  </div>
-</footer>
 
 </body>
 </html>

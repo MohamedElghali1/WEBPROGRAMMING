@@ -5,25 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - KALI.CO</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="sidebar.js" defer></script>
 </head>
 <body>
-  <main class="login-page container">
-    <div class="login-card">
-      <h1>Login</h1>
-      <p>Enter your email and password to continue.</p>
-      <form>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Password" required>
-        </div>
-        <button type="submit" class="btn submit-btn">Login</button>
-      </form>
-      <p class="login-note">Need an account? <a href="index.html">Go back</a></p>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <span class="sidebar-logo">KALI.CO</span>
+    <button class="sidebar-close" onclick="closeSidebar()"></button>
+  </div>
+  <nav>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Navigation</div>
+      <ul>
+        <li><a href="index.html"><span class="sidebar-icon"></span> Home</a></li>
+        <li><a href="about.html"><span class="sidebar-icon"></span> About Us</a></li>
+        <li><a href="#"><span class="sidebar-icon"></span> Contact</a></li>
+      </ul>
     </div>
-  </main>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Categories</div>
+      <ul>
+        <li><a href="categories.html#casual"><span class="sidebar-icon">👕</span> Casual</a></li>
+        <li><a href="categories.html#formal"><span class="sidebar-icon">👔</span> Formal</a></li>
+        <li><a href="categories.html#accessories"><span class="sidebar-icon">👟</span> Accessories</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Account</div>
+      <ul>
+        <li><a href="login.html" class="active"><span class="sidebar-icon"></span> Login</a></li>
+        <li><a href="signup.html"><span class="sidebar-icon"></span> Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+</aside>
+
+<header>
+  <div class="nav-container container">
+    <button class="hamburger" onclick="openSidebar()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="logo">KALI.CO</div>
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="categories.html">Categories</a>
+        <ul class="dropdown-menu">
+          <li><a href="categories.html#casual">Casual</a></li>
+          <li><a href="categories.html#formal">Formal</a></li>
+          <li><a href="categories.html#accessories">Accessories</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="header-right">
+      <button class="dark-toggle" id="darkToggle" onclick="toggleDarkMode()" title="Toggle dark mode">🌙</button>
+      <a href="login.html" class="login-btn">Login</a>
+    </div>
+  </div>
+</header>
+
+<main class="login-page">
+  <div class="login-card">
+    <h1>Welcome back</h1>
+    <p>Enter your credentials to access your account.</p>
+
+    <form>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="••••••••" required>
+      </div>
+      <button type="submit" class="btn submit-btn">Login</button>
+    </form>
+
+    <div class="divider">or</div>
+
+    <p class="login-note">Don't have an account? <a href="signup.html">Sign up free</a></p>
+  </div>
+</main>
+
 </body>
 </html>

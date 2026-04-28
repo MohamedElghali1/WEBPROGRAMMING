@@ -5,81 +5,141 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Casual Clothes - KALI.CO</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="sidebar.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="nav-container container">
-      <div class="logo">KALI.CO</div>
-      <ul class="links">
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-          <a href="categories.html">Categories</a>
-          <ul class="dropdown-menu">
-            <li><a href="categories.html#casual">Casual</a></li>
-            <li><a href="categories.html#formal">Formal</a></li>
-            <li><a href="categories.html#accessories">Accessories</a></li>
-          </ul>
-        </li>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <span class="sidebar-logo">KALI.CO</span>
+    <button class="sidebar-close" onclick="closeSidebar()">&#x2715;</button>
+  </div>
+  <nav>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Navigation</div>
+      <ul>
+        <li><a href="index.html"><span class="sidebar-icon">🏠</span> Home</a></li>
+        <li><a href="about.html"><span class="sidebar-icon">ℹ️</span> About Us</a></li>
+        <li><a href="#"><span class="sidebar-icon">📞</span> Contact</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Categories</div>
+      <ul>
+        <li><a href="casual.html" class="active"><span class="sidebar-icon">👕</span> Casual <span class="sidebar-badge">New</span></a></li>
+        <li><a href="categories.html#formal"><span class="sidebar-icon">👔</span> Formal</a></li>
+        <li><a href="categories.html#accessories"><span class="sidebar-icon">👟</span> Accessories</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Account</div>
+      <ul>
+        <li><a href="login.html"><span class="sidebar-icon">🔑</span> Login</a></li>
+        <li><a href="signup.html"><span class="sidebar-icon">✏️</span> Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+</aside>
+
+<div class="promo-banner">🔥 Free shipping on orders over $60 — Limited time offer!</div>
+
+<header>
+  <div class="nav-container container">
+    <button class="hamburger" onclick="openSidebar()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="logo">KALI.CO</div>
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="categories.html">Categories</a>
+        <ul class="dropdown-menu">
+          <li><a href="categories.html#casual">Casual</a></li>
+          <li><a href="categories.html#formal">Formal</a></li>
+          <li><a href="categories.html#accessories">Accessories</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="header-right">
+      <button class="dark-toggle" id="darkToggle" onclick="toggleDarkMode()" title="Toggle dark mode">🌙</button>
+      <a href="login.html" class="login-btn">Login</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="categories-hero">
+    <h1>Casual Collection</h1>
+    <p>Browse our casual clothes for relaxed, everyday style.</p>
+  </section>
+
+  <div class="container" style="padding-top: 48px; padding-bottom: 80px;">
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-image"><img src="https://via.placeholder.com/280x220?text=T-Shirt" alt="T-Shirt"></div>
+        <div class="product-info"><h3>T-Shirt</h3><div class="price">$20.00</div></div>
+      </div>
+      <div class="product-card">
+        <div class="product-image"><img src="https://via.placeholder.com/280x220?text=Jeans" alt="Jeans"></div>
+        <div class="product-info"><h3>Jeans</h3><div class="price">$40.00</div></div>
+      </div>
+      <div class="product-card">
+        <div class="product-image"><img src="https://via.placeholder.com/280x220?text=Sneakers" alt="Sneakers"></div>
+        <div class="product-info"><h3>Sneakers</h3><div class="price">$55.00</div></div>
+      </div>
+      <div class="product-card">
+        <div class="product-image"><img src="https://via.placeholder.com/280x220?text=Hoodie" alt="Hoodie"></div>
+        <div class="product-info"><h3>Hoodie</h3><div class="price">$35.00</div></div>
+      </div>
+      <div class="product-card">
+        <div class="product-image"><img src="https://via.placeholder.com/280x220?text=Shorts" alt="Shorts"></div>
+        <div class="product-info"><h3>Shorts <span class="sale-tag">SALE</span></h3><div class="price">$28.00</div></div>
+      </div>
+      <div class="product-card">
+        <div class="product-image"><img src="https://via.placeholder.com/280x220?text=Cap" alt="Cap"></div>
+        <div class="product-info"><h3>Cap</h3><div class="price">$15.00</div></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h2>KALI.CO</h2>
+      <p>Curating high-quality fashion from the world's best brands — accessible to everyone.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="categories.html#casual">Casual</a></li>
+        <li><a href="categories.html#formal">Formal</a></li>
+        <li><a href="categories.html#accessories">Accessories</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
         <li><a href="about.html">About Us</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <a href="login.html" class="login-btn">Login</a>
     </div>
-  </header>
-
-  <main class="container" style="padding: 60px 20px;">
-    <h1>Casual Collection</h1>
-    <p>Browse our casual clothes for relaxed, everyday style.</p>
-
-    <div class="product-grid">
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://via.placeholder.com/280x180?text=T-Shirt" alt="T-Shirt">
-        </div>
-        <h3>T-Shirt</h3>
-        <div class="price">$20.00</div>
-      </div>
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://via.placeholder.com/280x180?text=Jeans" alt="Jeans">
-        </div>
-        <h3>Jeans</h3>
-        <div class="price">$40.00</div>
-      </div>
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://via.placeholder.com/280x180?text=Sneakers" alt="Sneakers">
-        </div>
-        <h3>Sneakers</h3>
-        <div class="price">$55.00</div>
-      </div>
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://via.placeholder.com/280x180?text=Hoodie" alt="Hoodie">
-        </div>
-        <h3>Hoodie</h3>
-        <div class="price">$35.00</div>
-      </div>
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://via.placeholder.com/280x180?text=Shorts" alt="Shorts">
-        </div>
-        <h3>Shorts</h3>
-        <div class="price">$28.00</div>
-      </div>
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://via.placeholder.com/280x180?text=Cap" alt="Cap">
-        </div>
-        <h3>Cap</h3>
-        <div class="price">$15.00</div>
-      </div>
+    <div class="footer-col">
+      <h4>Account</h4>
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
     </div>
-  </main>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 KALI.CO Web Programming Project. All rights reserved.</p>
+  </div>
+</footer>
 
-  <footer>
-    <h2>KALI.CO</h2>
-    <p>&copy; 2026 Kali.co Web Programming Project. All rights reserved.</p>
-  </footer>
 </body>
 </html>

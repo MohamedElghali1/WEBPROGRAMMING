@@ -1,6 +1,7 @@
-/* 
+
+/* ===========================
    CSS VARIABLES (THEME)
-    */
+   =========================== */
 :root {
   --bg: #ffffff;
   --bg-secondary: #f7f7f7;
@@ -44,9 +45,9 @@ body.dark-mode {
   --dropdown-bg: #1e1e1e;
 }
 
-/* 
+/* ===========================
    RESET & BASE
-    */
+   =========================== */
 * {
   margin: 0;
   padding: 0;
@@ -81,9 +82,9 @@ img {
   padding: 0 24px;
 }
 
-/* 
+/* ===========================
    HEADER
-    */
+   =========================== */
 header {
   background-color: var(--header-bg);
   color: var(--header-text);
@@ -237,9 +238,9 @@ header {
   background: rgba(255,255,255,0.1);
 }
 
-/* 
+/* ===========================
    SIDEBAR
-    */
+   =========================== */
 .sidebar-overlay {
   display: none;
   position: fixed;
@@ -367,9 +368,9 @@ header {
   font-weight: 700;
 }
 
-/* 
+/* ===========================
    HERO SECTION
-    */
+   =========================== */
 .hero {
   background: linear-gradient(135deg, #111111 0%, #2d2d2d 100%);
   color: #ffffff;
@@ -426,9 +427,9 @@ header {
   transform: translateY(-1px);
 }
 
-/* 
+/* ===========================
    SECTION TITLES
-    */
+   =========================== */
 .section-title {
   font-size: 1.7rem;
   font-weight: 800;
@@ -459,9 +460,9 @@ header {
   text-decoration: underline;
 }
 
-/* 
+/* ===========================
    PRODUCT GRID & CARDS
-    */
+   =========================== */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -493,14 +494,10 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* hovering in product */
-
   transition: transform 0.4s;
 }
 
 .product-card:hover .product-image img {
-  /* hovering in product */
-
   transform: scale(1.05);
 }
 
@@ -533,9 +530,9 @@ header {
   margin-left: 6px;
 }
 
-/* 
+/* ===========================
    CATEGORIES PAGE
-    */
+   =========================== */
 .categories-hero {
   background: var(--bg-secondary);
   padding: 60px 24px;
@@ -604,9 +601,9 @@ header {
   margin-bottom: 12px;
 }
 
-/* 
+/* ===========================
    ABOUT PAGE
-    */
+   =========================== */
 .about-header {
   background: linear-gradient(135deg, #111111 0%, #2d2d2d 100%);
   color: white;
@@ -651,8 +648,9 @@ header {
   box-shadow: var(--shadow);
 }
 
-/*  LOGIN PAGE */
-    
+/* ===========================
+   LOGIN PAGE
+   =========================== */
 .login-page {
   min-height: calc(100vh - 68px);
   display: flex;
@@ -753,9 +751,9 @@ header {
   background: var(--border);
 }
 
-/* 
+/* ===========================
    SIGN UP PAGE
-    */
+   =========================== */
 .signup-page {
   min-height: calc(100vh - 68px);
   display: flex;
@@ -792,9 +790,9 @@ header {
   gap: 16px;
 }
 
-/* 
+/* ===========================
    FOOTER
-    */
+   =========================== */
 footer {
   background: var(--footer-bg);
   color: var(--footer-text);
@@ -858,9 +856,9 @@ footer {
   margin: 0 auto;
 }
 
-/* 
+/* ===========================
    BANNERS / PROMO
-    */
+   =========================== */
 .promo-banner {
   background: var(--accent);
   color: white;
@@ -871,9 +869,9 @@ footer {
   letter-spacing: 0.3px;
 }
 
-/* 
+/* ===========================
    MAIN SECTION SPACING
-    */
+   =========================== */
 main > section,
 main .container {
   padding-top: 60px;
@@ -885,9 +883,9 @@ main > .hero {
   padding-bottom: 100px;
 }
 
-/* 
+/* ===========================
    RESPONSIVE
-    */
+   =========================== */
 @media (max-width: 900px) {
   .links {
     display: none;
